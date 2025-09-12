@@ -1,12 +1,15 @@
 package org.example.models;
 
 import org.example.config.GerarUUID;
+import org.example.models.endereco.Endereco;
 import org.example.models.interfaces.Dados;
 
-public class Paciente implements Dados {
+public class Paciente  {
     private String id = "";
     private String nome = "";
     private String data_de_nascimento = "";
+    private  Endereco endereco;
+
 
     public void set_Paciente(String nome, String data_de_nascimento){
         this.id = GerarUUID.gerarUid();
@@ -19,30 +22,8 @@ public class Paciente implements Dados {
         return String.format("O nome do paciente é %s, ele nasceu em %s e seu id é %s",
                 nome, data_de_nascimento, id);
     }
-
-    @Override
-    public void telefone (){
-        System.out.printf("telefone");
+    public Endereco getEndereco(){
+        return endereco;
     }
 
-    public void setId() {
-        this.id = GerarUUID.gerarUid();
-    }
-
-    public  String getId()
-    {
-        return id;
-    }
-    public void setNome(String nome){
-        this.nome = nome;
-
-    }
-    public String getNome(){
-        return nome;
-    }
-
-    @Override
-    public void endereco() {
-
-    }
 }
