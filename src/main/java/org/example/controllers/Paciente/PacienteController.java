@@ -1,11 +1,12 @@
 package org.example.controllers.Paciente;
 
+import com.sun.net.httpserver.HttpHandler;
 import org.example.models.Paciente;
 import org.example.models.endereco.Endereco;
 
 import java.util.Scanner;
 
-public class PacienteController {
+public class PacienteController implements HttpHandler {
 
     public void createPaciente(){
         Paciente paciente = new Paciente();
