@@ -37,7 +37,7 @@ public class PacienteController {
 
         }else {
 
-            System.out.printf("Paciente registrado com sucesso");
+            System.out.printf("Paciente registrado com sucesso, sem endereco");
 
         }
     }
