@@ -6,7 +6,7 @@ import org.example.models.endereco.Endereco;
 
 import java.util.Scanner;
 
-public class PacienteController implements HttpHandler {
+public class PacienteController  {
 
     public void createPaciente(){
         Paciente paciente = new Paciente();

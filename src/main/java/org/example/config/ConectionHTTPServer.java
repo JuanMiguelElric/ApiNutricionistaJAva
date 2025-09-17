@@ -4,7 +4,7 @@ import com.sun.net.httpserver.HttpServer;
 import org.example.controllers.Paciente.PacienteController;
 
 import java.net.InetSocketAddress;
-
+/*
 public class ConectionHTTPServer {
 
     public static void main (String[] args) throws Exception
@@ -15,3 +15,4 @@ public class ConectionHTTPServer {
 
     }
 }
+*/
